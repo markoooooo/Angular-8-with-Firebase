@@ -1,4 +1,4 @@
-# JanuarA
+# ANGULAR 8 CRUD App With Firebase
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.18.
 
