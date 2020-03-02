@@ -1,0 +1,29 @@
+<a 
+  style="cursor: pointer;" 
+  [routerLink]="[index] "
+  routerLinkActive=""
+  class="list-group-item clearfix">
+  <div class="pull-left">
+    <!-- <h6 class="list-group-item-text"> {{subject.id}} </h6> -->
+    <h3 class="list-group-item-heading"> {{subject.proizvodjac}} </h3>
+    <h4 class="list-group-item-heading"> {{subject.model}} </h4>
+    <!-- <h5 class="list-group-item-heading"> {{subject.slika}} </h5> -->
+    <!-- <h6 class="list-group-item-text"> {{subject.video}} </h6> -->
+  </div>
+  <span class="pull-right">
+    <img
+      [src]="subject.slika"
+      alt="{{subject.slika }}"
+      class="img-responsive"
+      style="max-height: 50px;">
+  </span>
+</a>
+<!-- <div class="embed-responsive embed-responsive-16by9">
+  <iframe 
+    class="embed-responsive-item" 
+    width="640" 
+    height="480" 
+    src="https://youtu.be/yiyjcXWZ3Qo" 
+    frameborder="0" 
+    allowfullscreen></iframe>
+</div> -->

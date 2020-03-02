@@ -1,0 +1,21 @@
+<div class="row">
+  <div class="col-xs-12">
+    <button class="btn btn-primary" (click)="onNewSubject()">New Smarth Phone</button>
+  </div>
+</div>
+<hr>
+<div class="row">
+  <div class="col-xs-12">
+    <input type="text" [(ngModel)]="searchText" class="form-control" placeholder="Search">
+  </div>
+</div>
+<hr>
+<div class="row">
+  <div class="col-xs-12">
+    <app-subject-item 
+      *ngFor="let subjectEl of subjects | filter : searchText; let i = index" 
+      [subject]="subjectEl"
+      [index]="i">
+    </app-subject-item>
+  </div>
+</div>
